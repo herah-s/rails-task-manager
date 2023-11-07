@@ -1,0 +1,8 @@
+<h1> <%= @task.title %> </h1>
+
+<%= link_to '🔃 Edit task', edit_task_path %>
+
+<p class="m-2 bg-secondary text-light rounded border border-dark text-center py-5"><%= @task.details %></p>
+<p class="m-2 text-center"> Status: <%= @task.completed ? '✅' : '❌' %></p>
+
+<%= link_to '⬅️ Back to tasks', tasks_path %>
