@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   # patch 'tasks/:id', to: 'tasks#update'
 
   # delete 'tasks/:id', to: 'tasks#destroy'
+  root to: 'tasks#index'
   resources :tasks
 end
